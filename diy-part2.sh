@@ -20,4 +20,4 @@ sed -i 's/192.168.1.1/172.16.1.1/g' package/base-files/files/bin/config_generate
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
 
 # 添加定时任务
-echo 'echo '\''00 5 * * 5 sleep 5 && touch /etc/banner && reboot'\'' > $(1)/etc/crontabs/root' >> /package/base-files/Makefile
+echo 'echo '\''00 5 * * 5 sleep 5 && touch /etc/banner && reboot'\'' > $(1)/etc/crontabs/root' >> package/base-files/Makefile
